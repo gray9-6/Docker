@@ -1,0 +1,15 @@
+# Paranet image batanai hai , ki hum  hum base image ubuntu use karna chahte hai , this is an base image
+FROM ubuntu:latest
+
+# Maintener mein author batana hota hai 
+LABEL maintainer="ajay"
+
+# jab image build hogi toh kon se command chalane hai 
+
+# hume ubuntu ko update karna hai , its an update command
+RUN apt-get update    
+
+#  cmd se  kuch command chala sakte hai jab container fire hoga , 
+#  yaha jo command hum denge wo by default run hoga 
+CMD [ "echo", "This is my first Ubuntu image" ]
+
